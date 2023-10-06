@@ -1,0 +1,7 @@
+FROM openjdk:latest
+
+WORKDIR java/proj
+
+COPY calc.java /java/proj
+
+CMD [ "java", "calc.java" ]
